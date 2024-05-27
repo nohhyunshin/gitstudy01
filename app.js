@@ -6,7 +6,9 @@ app.get( '/', ( req, res ) => {
     res.end( '<h1> Hello World! </h1>' );
 });
 
-
+app.get( '/home', ( req, res ) => {
+    res.end( '<h1> Hello nodejs world! </h1>' );
+});
 
 const server = http.createServer( app );
 server.listen( 3000, () => {
